@@ -1,0 +1,54 @@
+{
+  "songs": [
+    {
+      "id": "1",
+      "title": "Blinding Lights",
+      "artist": "The Weeknd",
+      "album": "After Hours",
+      "year": 2020
+    },
+    {
+      "id": "2",
+      "title": "Shape of You",
+      "artist": "Ed Sheeran",
+      "album": "Divide",
+      "year": 2017
+    },
+    {
+      "id": "3",
+      "title": "Bad Guy",
+      "artist": "Billie Eilish",
+      "album": "When We All Fall Asleep, Where Do We Go?",
+      "year": 2019
+    },
+    {
+      "id": "4",
+      "title": "Save Your Tears",
+      "artist": "The Weeknd",
+      "album": "After Hours",
+      "year": 2020
+    },
+    {
+      "title": "Хрещатик",
+      "artist": "Павло Зібров",
+      "album": "Хрещатик",
+      "year": 1994,
+      "id": "EuSsnwL6xaA"
+    },
+    {
+      "title": "День народження",
+      "artist": "Павло Зібров",
+      "album": "Золота колекція",
+      "year": 1997,
+      "id": "mp25odSyUcg"
+    },
+    {
+      "title": "Ти подобаєшся мені",
+      "artist": "Віктор Павлік",
+      "album": "Шикидим",
+      "year": 1997,
+      "id": "Tl7cNTICEh4"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
