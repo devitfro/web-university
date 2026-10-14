@@ -1,0 +1,47 @@
+{
+  "songs": [
+    {
+      "id": "1",
+      "title": "Blinding Lights",
+      "artist": "The Weeknd",
+      "album": "After Hours",
+      "year": 2020
+    },
+    {
+      "id": "2",
+      "title": "Shape of You",
+      "artist": "Ed Sheeran",
+      "album": "Divide",
+      "year": 2017
+    },
+    {
+      "id": "mp25odSyUcg",
+      "title": "День народження",
+      "artist": "Павло Зібров",
+      "album": "Золота колекція",
+      "year": 1997
+    },
+    {
+      "id": "Tl7cNTICEh4",
+      "title": "Ти подобаєшся мені",
+      "artist": "Віктор Павлік",
+      "album": "Шикидим",
+      "year": 1997
+    },
+    {
+      "title": "Blinding Lights",
+      "artist": "The Weeknd",
+      "album": "After Hours",
+      "year": 2020,
+      "id": "VoH6sfjETyk"
+    },
+    {
+      "title": "Someone Like You",
+      "artist": "Adele",
+      "album": "21",
+      "year": 2011,
+      "id": "djc5Uliax-s"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
