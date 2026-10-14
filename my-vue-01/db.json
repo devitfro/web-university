@@ -1,0 +1,61 @@
+{
+  "songs": [
+    {
+      "id": "2",
+      "title": "Без бою",
+      "artist": "Океан Ельзи",
+      "album": "Gloria",
+      "year": 2005
+    },
+    {
+      "id": "3",
+      "title": "1944",
+      "artist": "Jamala",
+      "album": "1944",
+      "year": 2016
+    },
+    {
+      "id": "4",
+      "title": "Плакала",
+      "artist": "KAZKA",
+      "album": "KARMA",
+      "year": 2018
+    },
+    {
+      "id": "5",
+      "title": "Шум",
+      "artist": "Go_A",
+      "album": "Шум",
+      "year": 2021
+    },
+    {
+      "id": "6",
+      "title": "Обійми",
+      "artist": "Океан Ельзи",
+      "album": "Земля",
+      "year": 2013
+    },
+    {
+      "id": "7",
+      "title": "Квітка",
+      "artist": "The Hardkiss",
+      "album": "Залізна ластівка",
+      "year": 2018
+    },
+    {
+      "id": "8",
+      "title": "Стефанія",
+      "artist": "Kalush Orchestra",
+      "album": "Stefania",
+      "year": 2022
+    },
+    {
+      "title": "Stan",
+      "artist": "Eminem",
+      "album": "The Marshall Mathers LP",
+      "year": 2000,
+      "id": "xat1wQfLx-Y"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
