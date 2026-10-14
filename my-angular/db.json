@@ -1,0 +1,60 @@
+{
+  "songs": [
+    {
+      "id": "1",
+      "name": "Обійми",
+      "artist": "Океан Ельзи",
+      "album": "Земля",
+      "year": 2013
+    },
+    {
+      "id": "2",
+      "name": "Без бою",
+      "artist": "Океан Ельзи",
+      "album": "Gloria",
+      "year": 2005
+    },
+    {
+      "id": "3",
+      "name": "1944",
+      "artist": "Jamala",
+      "album": "1944",
+      "year": 2016
+    },
+    {
+      "id": "5",
+      "name": "Плакала",
+      "artist": "KAZKA",
+      "album": "KARMA",
+      "year": 2018
+    },
+    {
+      "id": "6",
+      "name": "Стефанія",
+      "artist": "Kalush Orchestra",
+      "album": "Stefania",
+      "year": 2022
+    },
+    {
+      "id": "7",
+      "name": "Додому",
+      "artist": "Kalush",
+      "album": "HOTIN",
+      "year": 2021
+    },
+    {
+      "id": "8",
+      "name": "Квіти",
+      "artist": "The Hardkiss",
+      "album": "Залізна ластівка",
+      "year": 2018
+    },
+    {
+      "name": "Du hast",
+      "artist": "Rammstein",
+      "album": "Sehnsucht",
+      "year": 2024,
+      "id": "NkO0iPK"
+    }
+  ]
+}

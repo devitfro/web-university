@@ -1,0 +1,40 @@
+<div class="wrap">
+  <h2>Contacts</h2>
+  <div class="toolbar">
+    <input [(ngModel)]="q" placeholder="Search by name/email/phone">
+    <select [(ngModel)]="groupId">
+      <option value="">— Any group —</option>
+      <option *ngFor="let g of groups" [value]="g.id">{{g.name}}</option>
+    </select>
+    <button (click)="search()">Search</button>
+    <button (click)="reset()">Reset</button>
+    <button class="primary" (click)="create()">+ New</button>
+  </div>
+
+  <table class="table" *ngIf="items?.length; else empty">
+    <thead><tr><th>Name</th><th>Email</th><th>Phone</th><th>Group</th><th style="width:1%"></th></tr></thead>
+    <tbody>
+      <tr *ngFor="let it of items">
+        <td><a (click)="openEdit(it.id)">{{it.name}}</a></td>
+        <td>{{(it as any).email || '—'}}</td>
+        <td>{{(it as any).phone || '—'}}</td>
+        <td>{{ groupNameOf((it as any).groupId) }}</td>
+        <td class="right">
+          <button (click)="openEdit(it.id)">✎</button>
+          <button (click)="askDelete(it)">🗑</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <ng-template #empty>
+    <p>No contacts found.</p>
+  </ng-template>
+
+  <app-pagination [page]="page" [total]="total" [perPage]="perPage"
+    (pageChange)="page=$event; applyFilters()"
+    (perPageChange)="perPage=$event; page=1; applyFilters()"></app-pagination>
+
+  <app-modal [open]="confirmOpen" title="Delete contact?" (close)="confirmOpen=false" (confirm)="doDelete()">
+    <ng-container *ngIf="toDelete">You are about to delete <strong>{{toDelete.name}}</strong>. This action cannot be undone.</ng-container>
+  </app-modal>
+</div>

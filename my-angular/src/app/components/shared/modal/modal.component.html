@@ -1,0 +1,15 @@
+<div *ngIf="open" class="backdrop" (click)="onBackdrop($event)">
+  <div class="dialog" role="dialog" aria-modal="true">
+    <div class="header">
+      <h3>{{ title }}</h3>
+      <button class="btn" (click)="close.emit()">×</button>
+    </div>
+    <div class="content">
+      <ng-content></ng-content>
+    </div>
+    <div class="footer">
+      <button class="btn" (click)="close.emit()">Cancel</button>
+      <button class="btn danger" (click)="confirm.emit()">Confirm</button>
+    </div>
+  </div>
+</div>

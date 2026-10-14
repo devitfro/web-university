@@ -1,0 +1,12 @@
+<div *ngIf="open" class="modal-backdrop" (click)="onBackdrop($event)">
+  <div class="modal-card" (click)="stop($event)">
+    <h3>{{title}}</h3>
+    <div class="modal-body">
+      <ng-content></ng-content>
+    </div>
+    <div class="actions">
+      <button type="button" (click)="close.emit()">Cancel</button>
+      <button type="button" (click)="confirm.emit()">Confirm</button>
+    </div>
+  </div>
+</div>

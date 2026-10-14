@@ -1,0 +1,5 @@
+.modal-backdrop{position:fixed; inset:0; background:rgba(0,0,0,.4); display:grid; place-items:center; z-index:1000;}
+.modal-card{background:#fff; padding:16px; border-radius:12px; min-width:320px;}
+.modal-card h3{margin-top:0}
+.actions{display:flex; justify-content:flex-end; gap:8px}
+.modal-body{margin:12px 0}

@@ -1,0 +1,13 @@
+<div class="paging">
+  <div>
+    <button (click)="prev()" [disabled]="page<=1">← Prev</button>
+    <span class="space">Page {{page}} / {{pages}}</span>
+    <button (click)="next()" [disabled]="page>=pages">Next →</button>
+  </div>
+  <div>
+    <label>Per page: </label>
+    <select [ngModel]="perPage" (ngModelChange)="perPageChange.emit($event)">
+      <option *ngFor="let n of [5,10,20]" [value]="n">{{n}}</option>
+    </select>
+  </div>
+</div>

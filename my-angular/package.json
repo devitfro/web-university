@@ -1,0 +1,36 @@
+{
+  "name": "contacts-app-angular",
+  "version": "2.0.1",
+  "private": true,
+  "scripts": {
+    "ng": "ng",
+    "start": "npx ng serve",
+    "build": "npx ng build",
+    "watch": "npx ng build --watch --configuration development",
+    "test": "npx ng test",
+    "serve:api": "json-server --watch db.json --port 5174",
+    "server": "json-server --watch db.json --port 5174"
+  },
+  "dependencies": {
+    "@angular/common": "^20.0.0",
+    "@angular/compiler": "^20.0.0",
+    "@angular/core": "^20.0.0",
+    "@angular/forms": "^20.0.0",
+    "@angular/platform-browser": "^20.0.0",
+    "@angular/platform-browser-dynamic": "^20.0.0",
+    "@angular/router": "^20.0.0",
+    "@angular/compiler-cli": "^20.0.0",
+    "rxjs": "^7.8.1",
+    "tslib": "^2.6.2",
+    "zone.js": "~0.15.0"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "20.3.5",
+    "@angular/cli": "20.3.5",
+    "typescript": "~5.9.3",
+    "json-server": "^0.17.4"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

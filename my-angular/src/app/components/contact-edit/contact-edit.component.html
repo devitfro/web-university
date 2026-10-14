@@ -1,0 +1,24 @@
+<div class="wrap">
+  <h2>{{ id ? 'Edit contact' : 'Create contact' }}</h2>
+  <form [formGroup]="form" (ngSubmit)="submit()" class="grid">
+    <label>Name<input formControlName="name" /></label>
+    <div class="hint" *ngIf="form.controls.name.touched && form.controls.name.invalid">Name is required (min 2 chars)</div>
+
+    <label>Email<input formControlName="email" /></label>
+    <div class="hint" *ngIf="form.controls.email.touched && form.controls.email.invalid">Invalid email</div>
+
+    <label>Phone<input formControlName="phone" /></label>
+
+    <label>Group
+      <select formControlName="groupId">
+        <option value="">—</option>
+        <option *ngFor="let g of groups" [value]="g.id">{{g.name}}</option>
+      </select>
+    </label>
+
+    <div class="actions">
+      <button type="button" (click)="cancel()">Cancel</button>
+      <button type="submit" [disabled]="saving">{{ saving ? 'Saving...' : 'Save' }}</button>
+    </div>
+  </form>
+</div>

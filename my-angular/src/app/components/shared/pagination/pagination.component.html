@@ -1,0 +1,16 @@
+<div style="display:flex; align-items:center; justify-content:space-between; gap:12px;">
+  <div style="display:flex; gap:8px;">
+    <button class="btn" (click)="first()" [disabled]="page<=1">First</button>
+    <button class="btn" (click)="prev()"  [disabled]="page<=1">Prev</button>
+    <div style="padding:8px 10px;">Page {{page}} / {{totalPages}}</div>
+    <button class="btn" (click)="next()"  [disabled]="page>=totalPages">Next</button>
+    <button class="btn" (click)="last()"  [disabled]="page>=totalPages">Last</button>
+  </div>
+  <div>
+    <label>Per page:&nbsp;
+      <select #perSel class="select" [value]="perPage" (change)="onPerPage(perSel.value)">
+        <option *ngFor="let n of [5,10,20,50,100]" [value]="n">{{n}}</option>
+      </select>
+    </label>
+  </div>
+</div>

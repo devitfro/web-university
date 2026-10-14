@@ -1,0 +1,1 @@
+Removed @angular/animations since it's not used. No need to install it.
